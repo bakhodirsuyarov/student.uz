@@ -1,0 +1,509 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background: #14444E;
+    transition: 0.7s;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.inp-nav {
+    height: 35px;
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: 0;
+    color: white;
+    width: 600px;
+    font-size: 20px;
+}
+
+.blabla2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    background: #111414;
+    padding: 20px;
+    width: 100%;
+    height: 30px;
+}
+
+.header_c{
+    height: 4.5vh;
+    width: 100vw;
+    box-shadow: 3px 1px 10px black;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.right-area{
+    width: 300px;
+}
+
+.header-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left_area h3 {
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.left_area span {
+    color: #FFD100
+}
+
+.logout_btn {
+    align-items: center;
+    padding: 8px 25px;
+    background: #eeff01;
+    text-decoration: none;
+    float: right;
+    border-radius: 2px;
+    font-size: 18px;
+    color: #000000;
+    transition: 0.5s;
+    transition-property: background;
+
+}
+
+.hhhd {
+    align-items: center;
+    padding: 9px;
+    background: transparent;
+    text-decoration: none;
+    float: right;
+    border-radius: 2px;
+    font-size: 18px;
+    /* font-weight: 400px; */
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.hhhd:hover {
+    background: rgb(81, 133, 3);
+}
+
+.logout_btn:hover {
+    background: #AD8E04;
+}
+
+.graduation_cap {
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: -15px 50px;
+    width: 100px;
+}
+
+.sidebar {
+    background: #111414;
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 90%;
+    transition: 0.5s;
+    transition-property: left;
+}
+
+.sidebar .profile_image {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px
+}
+
+.sidebar h4 {
+    color: #ccc;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.sidebar button {
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+    background-color: transparent;
+    text-align: left;
+    font-size: 23px;
+    border: none;
+}
+
+.sidebar button:hover {
+    background: #FFD100;
+}
+
+.sidebar i {
+    padding-right: 10px;
+}
+
+label #sidebar_btn {
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    left: 250px;
+    font-size: 20px;
+    margin: 13px 0;
+    transition: 0.5s;
+    transition-property: color;
+}
+
+label #sidebar_btn:hover {
+    color: #FFD100;
+}
+
+#check:checked~.sidebar {
+    left: -190px;
+}
+
+#check:checked~.sidebar button span {
+    display: none;
+}
+
+#check:checked~.sidebar  button {
+    font-size: 23px;
+    margin-left: 170px;
+    width: 80px;
+}
+
+.content {
+    margin-left: 250px;
+    background: url(../img/student5.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: 0.7s;
+}
+
+#check:checked~.content {
+    margin-left: 0px;
+}
+
+#check {
+    display: none;
+}
+
+
+.content-wrapper{
+    display: none;
+    padding-top: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color: rgba(0,0,0,0.5);
+    height: 79.4vh;
+}
+
+.content-wrapper__active{
+    display: block;
+}
+
+.content-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content_fast-food-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1C2833;
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid  #424949;
+    width: 300px;
+    height: 400px;
+}
+
+.fastfood-card__img{
+    width: 250px;
+    height: 180px;
+    border-radius: 15px;
+}
+
+.fastfood-card__info{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.fastfood-card__title{
+    font-size: 23px;
+    color: #fff;
+}
+
+.fastfood-card__discount{
+    font-size: 25px;
+    color: #fff;
+}
+
+.fastfood-card__all{
+    background-color: transparent;
+    font-size: 22px;
+    border-radius: 15px;
+    border: 1px solid yellow;
+    color: white;
+    padding: 15px;
+}
+
+.fastfood-card__all:hover{
+    color: black;
+    background-color: yellow;
+    transition: all 0.5s;
+}
+
+.fast-food__content-list{
+    display: none;
+}
+
+.fast-food__content-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.fastfood-item{
+    background-color: #283747;
+    border-radius: 15px;
+    padding: 25px;
+    border: 1px solid #1C2833;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.fast-food__item-img{
+    width: 250px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.fastfood-item__title{
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+
+.fastfood__item-cost{
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+
+.fastfood__item-discount{
+    color: yellow;
+    font-size: 26px;
+    text-align: center;
+}
+
+.fastfood__item-bottom-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fastfood__item-location{
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.fastfood__item-buying{
+    background-color: transparent;
+    border: 1px solid yellow;
+    border-radius: 15px;
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.fastfood__item-buying:hover{
+    background-color: yellow;
+    color: black;
+}
+
+.milliy_food-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1C2833;
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid  #424949;
+    width: 300px;
+    height: 400px;
+}
+
+.milliy-card__img{
+    width: 250px;
+    height: 180px;
+    border-radius: 15px;
+}
+
+.milliy-card__info{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.milliy-card__title{
+    font-size: 23px;
+    color: #fff;
+}
+
+.milliy-card__discount{
+    font-size: 25px;
+    color: #fff;
+}
+
+.milliy-card__all{
+    background-color: transparent;
+    font-size: 22px;
+    border-radius: 15px;
+    border: 1px solid yellow;
+    color: white;
+    padding: 15px;
+}
+
+.milliy-card__all:hover{
+    color: black;
+    background-color: yellow;
+    transition: all 0.5s;
+}
+
+.content_fastfood__milliy-card__delete{
+    display: none;
+}
+
+.content_fastfood__milliy-card__active{
+    display: block;
+}
+
+.content-fastfood__list-active{
+    display: block;
+}
+
+.content-fastfood__list-delete{
+    display: block;
+}
+
+.milliy__content-list{
+    display: none;
+}
+
+.milliy__content-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.milliy__content-Item{
+    background-color: #283747;
+    border-radius: 15px;
+    padding: 25px;
+    border: 1px solid #1C2833;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.milliy__content-IMG{
+    width: 250px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.milliy__content-Title{
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+
+.milliy__content-Cost{
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+}
+
+.milliy__content-Discount{
+    color: yellow;
+    font-size: 26px;
+    text-align: center;
+}
+
+.milliy__bottom-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.milliy__content-Location{
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.milliy__content-buying{
+    background-color: transparent;
+    border: 1px solid yellow;
+    border-radius: 15px;
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.milliy__content-buying:hover{
+    background-color: yellow;
+    color: black;
+}
+
+
+.content_milliy-taomlar-active{
+    display: block;
+}
+
+
+
+
+
+/* TRANSPORT */
+
+.content-wrapper__second{
+    display: none;
+    padding-top: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
+    background-color: rgba(0,0,0,0.5);
+    height: 79.4vh;
+}
+
+.content-wrapper__second-active{
+    display: block;
+}

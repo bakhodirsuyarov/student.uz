@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student.Uz</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- <script defer src="./style.js"></script> -->
+</head>
+
+<body>
+
+    <input type="checkbox" id="check">
+    <!--header area start-->
+    <header class="header_c">
+        <div class="blabla2">
+            <div class="header-left">
+                <label for="check">
+                    <i class="fas fa-bars" id="sidebar_btn"></i>
+                </label>
+
+                <div class="graduation_cap">
+                    <a href="index.html"><img src="img/graduation-cap.png" alt=""></a>
+                    <a href="index.html" style="text-decoration: none; color: white; margin-left: 10px; "><p>Student.Uz</p></a>
+                </div>
+            </div>
+
+            <div class="right_area">
+                <input class="inp-nav" placeholder="Search" type="text">
+            </div>
+
+            <div class="header-right">
+                <div>
+                    <a href="main.html" class="logout_btn">Login</a>
+                </div>
+                <div>
+                    <a href="#"><i class="fa-solid fa-cart-shopping hhhd"></i></a>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+    <!--header area end-->
+
+    <!--sidebar start-->
+
+    <div class="sidebar">
+        <center>
+            <img src="./img/user-png.png" class="profile_image" alt="user" width="100" height="100">
+            <h4>User</h4>
+        </center>
+
+        <button onclick="foodFunc()"><i class="fa-solid fa-utensils"></i><span>Foods</span></button>
+        <button onclick="transFunc()"><i class="fa-solid fa-car-rear"></i><span>Transport</span></button>
+        <button onclick="homeFunc()"><i class="fa-solid fa-house-circle-check"></i><span>Home</span></button>
+        <button onclick="jobFunc()"><i class="fa-solid fa-briefcase"></i><span>Job</span></button>
+        <button onclick="settingsFunc()"><i class="fas fa-sliders-h"></i><span>Settings</span></button>
+    </div>
+    <!--sidebar end-->
+
+
+    <div class="content">
+        <div class="content-wrapper">
+            <ul class="content-list">
+                <li class="content_fast-food">
+                    <div class="content_fast-food-card">
+                        <div class="fastfood-card__img-box">
+                            <img class="fastfood-card__img" src="./img/max-way-logo2.png">
+                        </div>
+                       <div class="fastfood-card__info">
+                            <h3 class="fastfood-card__title">MaxWay</h3>
+                            <h2 class="fastfood-card__discount">30% DISCOUNT</h2>
+                        </div>
+                        <button onclick="fastfoodAllFunc()" class="fastfood-card__all">Barchasini ko'rish</button>
+                    </div>
+                    <div class="fast-food__content-list">
+                        <div class="fast-food__content-box">
+
+                        </div>
+                    </div>
+                </li>
+                <li class="content_milliy-taomlar">
+                    <div class="milliy_food-card">
+                        <div class="milliy-card__img-box">
+                            <img class="milliy-card__img" src="./img/anjir-logo.jfif">
+                        </div>
+                        <div class="milliy-card__info">
+                            <h3 class="milliy-card__title">Anjir</h3>
+                            <h2 class="milliy-card__discount">20% DISCOUNT</h2>
+                        </div>
+                        <button onclick="milliyAllFunc()" class="milliy-card__all">Barchasini ko'rish</button>
+                    </div>
+                    <div class="milliy__content-list">
+                        <div class="milliy__content-box">
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="content-wrapper__second">
+
+        </div>
+    </div>
+
+
+
+
+    <script src="./JS/maxWay.js"></script>
+    <script src="./JS/anjir.js"></script>
+    <script src="./JS/transport.js"></script>
+    <script defer src="./JS/style.js"></script>
+
+</body>
+
+</html>

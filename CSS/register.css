@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+header {
+    position: fixed;
+    top: 0;
+    right: 50;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+  }
+  
+  .logo {
+    height: 60px;
+    line-height: 60px;
+    color: #12334e;
+    font-weight: 600;
+    font-size: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+    padding-left: 25px;
+  }
+  .logo span {
+    color: #FCC647;
+  }
+  .logo img {
+    width: 70px;
+  }
+
+#toggle{
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.showcase-regs{
+    background-image: url("https://img.freepik.com/premium-vector/black-yellow-background-vector-overlap-layer-dark-space-background-design_8829-2347.jpg?w=900");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+.showcase-regs .box{
+    width: 28%;
+    padding: 20px 23px;
+    border-radius: 5px;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    margin-left: 400px;
+}
+.box a{
+    text-align: center;
+}
+button{
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    background: yellow;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.2s;
+}
+label{
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+}
+input{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid yellow;
+    background: transparent;
+    font-size: 18px;
+    color: white;
+    padding: 5px;
+}
+.span-message{
+    padding-top: 13px;
+    padding-bottom: 13px;
+    color: red;
+}
