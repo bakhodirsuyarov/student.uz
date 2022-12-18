@@ -32,7 +32,7 @@
             </div>
 
             <div class="right_area">
-                <input class="inp-nav" placeholder="Search" type="text">
+                <input id="searchInput" class="inp-nav" placeholder="Search" type="text" oninput="searchFunc()">
             </div>
 
             <div class="header-right">
@@ -69,6 +69,10 @@
 
     <div class="content">
         <div class="content-wrapper">
+            <div class="cost-input__box">
+                <input type="number" class="content__from-cost cost-input" placeholder="from">
+                <input type="number" class="content__to-cost cost-input" placeholder="to" oninput="maxCost()">
+            </div>
             <ul class="content-list">
                 <li class="content_fast-food">
                     <div class="content_fast-food-card">
@@ -117,6 +121,8 @@
 
     <script src="./JS/maxWay.js"></script>
     <script src="./JS/anjir.js"></script>
+    <!-- <script src="./JS/taomlar.js"></script> -->
+    <script src="./JS/job.js"></script>
     <script src="./JS/transport.js"></script>
     <script defer src="./JS/style.js"></script>
 

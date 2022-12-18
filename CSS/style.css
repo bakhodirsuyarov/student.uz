@@ -2,8 +2,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
-    background: #14444E;
+    /* background: #14444E; */
     transition: 0.7s;
+    background: url(../img/student5.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 ul{
@@ -196,12 +201,9 @@ label #sidebar_btn:hover {
 
 .content {
     margin-left: 250px;
-    background: url(../img/student5.webp);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     height: 100vh;
     transition: 0.7s;
+    z-index: 2;
 }
 
 #check:checked~.content {
@@ -216,15 +218,42 @@ label #sidebar_btn:hover {
 .content-wrapper{
     display: none;
     padding-top: 200px;
-    padding-left: 200px;
-    padding-right: 200px;
-    background-color: rgba(0,0,0,0.5);
-    height: 79.4vh;
+    /* padding-left: 200px; */
+    padding-right: 100px;
 }
 
 .content-wrapper__active{
     display: block;
 }
+
+
+.cost-input__box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1C2833;
+    width: 700px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.cost-input{
+    padding: 10px 10px 10px 0;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: #fff;
+    background-color: transparent;
+    font-size: 22px;
+    outline: none;
+}
+
+
+
 
 .content-list{
     display: flex;
@@ -287,8 +316,8 @@ label #sidebar_btn:hover {
 .fast-food__content-box{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
+    margin-left: 10%;
 }
 
 .fastfood-item{
@@ -301,8 +330,8 @@ label #sidebar_btn:hover {
 }
 
 .fast-food__item-img{
-    width: 250px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
     border-radius: 15px;
 }
 
@@ -334,6 +363,7 @@ label #sidebar_btn:hover {
     color: #fff;
     font-size: 22px;
     margin-bottom: 15px;
+    border-radius: 15px;
 }
 
 .fastfood__item-buying{
@@ -423,6 +453,7 @@ label #sidebar_btn:hover {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin-left: 100px;
 }
 
 .milliy__content-Item{
@@ -435,8 +466,8 @@ label #sidebar_btn:hover {
 }
 
 .milliy__content-IMG{
-    width: 250px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
     border-radius: 15px;
 }
 
@@ -468,6 +499,7 @@ label #sidebar_btn:hover {
     color: #fff;
     font-size: 22px;
     margin-bottom: 15px;
+    border-radius: 15px;
 }
 
 .milliy__content-buying{
